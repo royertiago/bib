@@ -6,7 +6,7 @@ BIBSRC:=$(shell find bib/ -name "*.bib")
 all: $(BIBNAME)
 
 clean:
-	-rm $(BIBNAME)
+	rm -f $(BIBNAME)
 
 $(BIBNAME): $(BIBSRC)
 	cat $(BIBSRC) > $(BIBNAME)

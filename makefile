@@ -1,9 +1,11 @@
 BIBNAME=bibliography.bib
 BIBSRC:=$(shell find bib/ -name "*.bib")
 
-.PHONY: all clean
+.PHONY: all mostlyclean clean
 
 all: $(BIBNAME)
+
+mostlylcean:
 
 clean:
 	rm -f $(BIBNAME)

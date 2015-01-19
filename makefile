@@ -1,4 +1,4 @@
-BIBNAME=bibliography.bib
+BIBNAME:=bibliography.bib
 BIBSRC:=$(shell find bib/ -name "*.bib")
 
 .PHONY: all mostlyclean clean

@@ -24,7 +24,7 @@ BIBSRC:=$(shell find $(BIBDIR)/bib/ -name "*.bib")
 # Prefixed standard targets
 bib-all: $(BIB)
 
-bib-mostlylcean:
+bib-mostlyclean:
 
 bib-clean:
 	rm -f $(BIB)

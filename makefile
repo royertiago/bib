@@ -15,9 +15,10 @@
 # Mimicking C convention, every variable name is prefixed by BIB
 # and every target name is prefixed by bib-.
 
+# The 'dir' function includes the trailing slash.
 BIBDIR:=$(dir $(lastword $(MAKEFILE_LIST)))
-BIB?=$(BIBDIR)/bibliography.bib
-BIBSRC:=$(shell find $(BIBDIR)/bib/ -name "*.bib")
+BIB?=$(BIBDIR)bibliography.bib
+BIBSRC:=$(shell find $(BIBDIR)bib/ -name "*.bib")
 
 .PHONY: bib-all bib-mostlyclean bib-clean
 

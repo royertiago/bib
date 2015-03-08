@@ -11,3 +11,12 @@ by the makefile.
 
 The makefile is ready to be included by other makefiles;
 for details, see the makefile documentations.
+
+
+URL access date
+---------------
+All URL access dates are in TeX format
+(yyyy/mm/dd),
+surrounded by \accessdate{}.
+This macro can, then, be defined in the .tex document
+to properly format the date according to the chosen bibliographical style.

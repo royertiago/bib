@@ -17,7 +17,7 @@
 # The 'dir' function includes the trailing slash.
 bib_dir := $(dir $(lastword $(MAKEFILE_LIST)))
 bib ?= $(bib_dir)bibliography.bib
-bib_src := $(shell find $(bib_dir)bib/ -name "*.bib")
+bib_src := $(shell find $(bib_dir) -mindepth 2 -name "*.bib")
 
 .PHONY: bib-all bib-clean
 

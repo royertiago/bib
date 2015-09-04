@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{complexity}
+
+\begin{document}
+\title{Notes about \cite{Cook1973}}
+\author{Tiago Royer}
+\maketitle
+
+\textbf{Page 2:} The notation $L_N(T(n))$ that Cook uses
+is equivalent to $\NTIME(T(n))$.
+
+I think that Cook's \emph{real time countable}
+is what textbooks (like \cite{HopcroftUllman1979} and~\cite{AroraBarak2009})
+call ``time-constructible''.
+He requires the function to output a string of size $f(n)$
+(in the output tape)
+using only $f(n)$ time;
+so, the machine \emph{must} output one symbol per step,
+thus requiring the machine to function for exactly $f(n)$ steps.
+This makes his definition essentially the same as
+Hopcroft's and Ullman's~\cite[p.~299]{HopcroftUllman1979}.
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
